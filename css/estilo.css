@@ -24,6 +24,20 @@ body {
     height: 5rem;
     width: 5rem;
 }
+
+section img {
+    width: 30rem;
+    border-radius: 5px;
+}
+
+section button {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 10rem;
+    height: 4rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
 /* HERO */
 
 .fondoImg {
@@ -58,6 +72,7 @@ body {
     font-weight: bold;
     color: white;
     text-shadow: 4px 3px black;
+    font-size: 60px;
 }
 
 /* PRODUCTOS */
@@ -74,6 +89,21 @@ body {
 .tituloProductos h2 {
     font-size: 5rem;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 20vw;
+    height: auto;
+    margin: 10px;
+    background-image: radial-gradient(#24FE41,#FDFC47)
+}
+
 
 /*formulario contacto*/
 .contenedor{
@@ -171,6 +201,4 @@ footer ul li a {
     color: black;
     margin: 2rem;
 }
-
-
 
