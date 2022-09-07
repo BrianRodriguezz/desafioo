@@ -1,0 +1,9 @@
+/*MAP - GET */
+
+$estilo: (color:#e9ff70, tamFuente: 35px, ali: center);
+
+.qs {
+    background-color: map-get($estilo, color );
+    font-size: map-get($estilo, tamFuente);
+}
+

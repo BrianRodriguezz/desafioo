@@ -4,6 +4,27 @@
   100% {
     opacity: 100%; } }
 
+/*MAP - GET */
+.qs {
+  background-color: #e9ff70;
+  font-size: 35px; }
+
+/*EXTEND*/
+.primerEstilo, .segundoEstilo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: right; }
+
+.segundoEstilo {
+  font-size: 35px; }
+
+/* mixin sin parametros */
+.qs {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 4rem;
+  text-align: center; }
+
+/*mixin con parametros */
 html {
   font-size: 62.5%; }
 
@@ -42,7 +63,7 @@ section button {
   background-repeat: no-repeat;
   background-position: auto;
   background-size: cover;
-  opacity: 90%;
+  opacity: 95%;
   position: relative;
   height: 60vh;
   width: 100%; }

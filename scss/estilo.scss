@@ -6,6 +6,10 @@
 		opacity: 100%;
 	}
 }
+@import"maps";
+@import "extend";
+@import "mixin";
+
 html {
 	font-size: 62.5%;
 }
@@ -46,7 +50,7 @@ section {
 	background-repeat: no-repeat;
 	background-position: auto;
 	background-size: cover;
-	opacity: 90%;
+	opacity: 95%;
 	position: relative;
 	height: 60vh;
 	width: 100%;
