@@ -1,11 +1,4 @@
-@keyframes "texto" {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 100%;
-	}
-}
+
 @import"maps";
 @import "extend";
 @import "mixin";
@@ -159,6 +152,7 @@ h1 {
 	height: 350px;
 	object-fit: cover;
 }
+
 footer {
 	padding-top: 3rem;
 	background-color: #e9ff70;
@@ -173,4 +167,46 @@ footer {
 			}
 		}
 	}
+}
+
+	/***TABLET***/
+
+@media (min-width:700px) and (max-width:1100px) {
+    .row{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "remeraNegra remeraCeleste"
+        "remeraNaranja remeraAmarilla"
+        "short medias" 
+        "silbato tarjeta"
+        "footer footer"
+        ;
+    }
+}
+
+	/***MÓVIL***/
+
+@media (max-width:699px) {
+    .row{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "remeraNegra"
+        "remeraCeleste"
+        "remeraNaranja"
+        "remeraAmarilla"
+        "short"
+        "medias"
+        "silbato" 
+        "tarjeta"
+        "footer";
+    }
+
+    html {
+        font-size: 75%;
+    }
+
 }
