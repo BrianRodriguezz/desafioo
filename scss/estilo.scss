@@ -2,6 +2,11 @@
 @import"maps";
 @import "extend";
 @import "mixin";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html {
 	font-size: 62.5%;
@@ -36,13 +41,17 @@ body {
 	opacity: 95%;
 	grid-area: header;
 }
-.colorBtn {
+.colorBoton {
 	border-radius: 5px;
 	background: linear-gradient(to left top, #ffffff,#e9ff70);
 	color: black;
 	font-size: 2rem;
 	margin-bottom: 1rem;
+    width: 10rem;
+    height: 4rem;
+    cursor: pointer;
 }
+
 .tituloPrincipal {
 	height: 10rem;
 	width: 50rem;
@@ -75,36 +84,9 @@ body {
 		font-size: 5rem;
 	}
 }
-.row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
+
 .card {
-	width: 20vw;
-	height: auto;
-	margin: 10px;
 	background-image: radial-gradient(#24FE41,#FDFC47);
-}
-
-article {
-	margin: 1rem;
-    padding: 0.5rem;
-    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    height: 50rem;
-
-/*Flex*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-article img {
-	width: 30rem;
-    border-radius: 5px
 }
 
 .contenedor {
@@ -168,7 +150,7 @@ article img {
     }
 }
 	
-.h1 {
+h1 {
 	animation-name: texto;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
@@ -194,63 +176,4 @@ footer {
 	}
 }
 
-	/***TABLET***/
 
-@media (min-width:700px) and (max-width:1100px) {
-    .row{
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "nav nav"
-        "remeraNegra remeraCeleste"
-        "remeraAmarilla short"
-        " medias silbato" 
-        " tarjeta intercomunicador"
-        "footer footer"
-        ;
-    }
-
-	.fondoImg {
-		background-image: url("../img/pita\ principal.jpg");
-		background-repeat: no-repeat;
-		background-position: auto;
-		background-size: cover;
-		height: 60vh;
-		width: 100%;
-		position: relative;
-		opacity: 95%;
-		grid-area: header;
-	}
-	section {
-        text-align: center;
-    }
-
-    section img {
-        width: 300px;
-    }
-}
-
-	/***MÓVIL***/
-
-@media (max-width:699px) {
-    .row{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "remeraNegra"
-        "remeraCeleste"
-        "remeraAmarilla"
-        "short"
-        "medias"
-        "silbato" 
-        "tarjeta"
-		"intercomunicador"
-        "footer";
-    }
-
-    html {
-        font-size: 75%;
-    }
-
-}
